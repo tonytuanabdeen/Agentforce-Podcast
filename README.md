@@ -19,7 +19,9 @@ This repository contains all the source metadata used to set up **Agentforce** a
 
 - [Metadata Deployment](#Metadata-Deployment)
 
-### Environment
+    - [Episode 01 - Agentforce Answer Questions with Knowledge](#Episode-01:-Answer-Questions-with-Knowledge)
+
+## Environment
 
 These applications requires licenses for the following features:
 
@@ -30,13 +32,13 @@ These applications requires licenses for the following features:
 > Start from a brand-new environment to avoid conflicts with previous work you may have done.
 > Please start by signing up for a Developer Org @ [developer.salesforce.com/signup](developer.salesforce.com/signup).
 
-#### Salesforce CLI
+## Salesforce CLI
 
 [Install the Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli) or check that your installed CLI version is greater than `2.56.7` by running `sf -v` in a terminal.
 
 If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_update_cli.htm), either run `sf update` or `npm install --global @salesforce/cli` depending on how you installed the CLI.
 
-### Feature activation
+## Feature activation
 
 1️⃣ Ensure that Data Cloud provisioning is complete before proceeding.
 
@@ -55,9 +57,9 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
 
 - From **Setup**, go to **Einstein Bots**. Toggle on **Einstein Bots**.
 
-### Repository and Org Setup
+## Repository and Org Setup
 
-1️⃣ Clone this repository:
+1. Clone this repository:
 
     ```bash
     git clone https://github.com/tonytuanabdeen/Agentforce-Podcast.git
@@ -70,25 +72,26 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
     sf org login web -s -a AF-Dev-target
     ```
 
-### Create the default Agentforce Agent User
+## Create the default Agentforce Agent User
 
     ```bash
     sf apex run -f apex-scripts/setup-agent-user.apex
     ```
 
-### Metadata Deployment
+## Metadata Deployment
 
-#### Episode 01 - Agentforce - **Answer Questions with Knowledge**
+### Episode 01: Answer Questions with Knowledge
 
-1️⃣ Deploy the **af-knowledge-faq** metadata.
+1. Deploy the **af-knowledge-faq** metadata.
 
     ```bash
     sf project deploy start -d af-knowledge-faq
     ```
 
-    > [!IMPORTANT]
-    > This package will deploy the required Permission Sets, enable Lightning Knowledge, and configure the Knowledge__kav custom field along with its page layout.
-    > Most importantly, it will also deploy the Agentforce Agent – “Marhaba AI Agent”.
+
+> [!IMPORTANT]
+> This package will deploy the required Permission Sets, enable Lightning Knowledge, and configure the Knowledge__kav custom field along with its page layout.
+> Most importantly, it will also deploy the Agentforce Agent – “Marhaba AI Agent”.
 
 2️⃣ Assign the "Knowledge FAQ Access" permission set to the running user.
 
