@@ -10,6 +10,7 @@
 	</types>	
 	<types>
 		<members>Knowledge_FAQ_Access</members>
+		<members>Agent_Action_Access</members>
 		<name>PermissionSet</name>
 	</types>
 	<types>
@@ -21,8 +22,13 @@
 		<name>Bot</name>
 	</types>
 	<types>
-		<members>M_AI_Agent</members>
+		<members>Marahaba_AI_Agent</members>
 		<name>GenAiPlannerBundle</name>
+	</types>	
+	<types>
+		<members>Agent_Get_Order_by_Order_Number</members>
+		<members>Agent_Identify_Customer_By_Email</members>
+		<name>Flow</name>
 	</types>			
 	<version>65.0</version>
 </Package>

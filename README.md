@@ -16,6 +16,7 @@ This repository contains all the source metadata used to set up **Agentforce** a
    * [Create the default Agentforce Agent User](#Create-the-default-Agentforce-Agent-User)
    * [Metadata Deployment](#Metadata-Deployment)
       * [Episode 01 - Agentforce Answer Questions with Knowledge](#️-episode-01-answer-questions-with-knowledge)
+      * [Episode 02 - Agentforce Order Inquiry with Flow-based Custom Actions](#️-episode-01-answer-questions-with-knowledge)      
 
 
 ## Environment
@@ -129,3 +130,34 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
     - Content Field: "Details"
 
 ![Agentforce Data Library Setup](docs/gfx/data-library-setup.png)
+
+
+### ⚙️ Episode 02: Order Inquiry with Flow-based Custom Actions
+
+1. Deploy the **af-order-inquiry** metadata.
+
+    ```bash
+    sf project deploy start -d af-order-inquiry
+    ```
+
+> [!IMPORTANT]
+> This package will deploy the required Permission Sets, 2 Flows & the updated “Marhaba AI Agent” with "Order Inquiery" Topic and relavant Actions.
+
+2. Assign the "Agent Action Access" permission set to the default Agent User.
+
+> [!IMPORTANT]
+> First, query the Agent User to retrieve the Username, which you’ll need to update in the Permission Set Assignment script above.
+
+    ```bash
+    sf data query --query "SELECT UserName FROM User WHERE Profile.Name = 'Einstein Agent User' AND IsActive = true"
+    ```
+
+    ```bash
+    sf org permset assign -n Agent_Action_Access -b agent.user@af_dev1761280730.salesforce.com 
+    ```
+
+3. Setup Data - Create Customer and Order records.
+
+    ```bash
+    sf apex run -f apex-scripts/setup-data-AccountAndOrder.apex
+    ```

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Updates the orderDetails variable with the details of the identified order.</description>
+        <name>SetOrderDetails</name>
+        <label>Set Order Details</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>orderDetails</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>OrderResponse</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <environments>Default</environments>
+    <formulas>
+        <name>OrderResponse</name>
+        <dataType>String</dataType>
+        <expression>&quot;The status of your Order #&quot; &amp; {!orderNumber} &amp; &quot; is &quot; &amp; TEXT({!Get_Order_by_Order_Number.Status}) &amp; &quot;, and it should be delivered to &quot; &amp; {!Get_Order_by_Order_Number.ShippingStreet} &amp; &quot;, &quot; &amp; {!Get_Order_by_Order_Number.ShippingCity}  &amp; &quot;, &quot; &amp; {!Get_Order_by_Order_Number.ShippingState} &amp; &quot;, &quot; &amp; {!Get_Order_by_Order_Number.ShippingCountry} &amp; &quot; by 3-5 Business Days.&quot;</expression>
+    </formulas>
+    <interviewLabel>Agent - Get Order by Order Number {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Agent - Get Order by Order Number</label>
+    <overriddenFlow>SvcCopilotTmpl__GetOrderByOrderNumber</overriddenFlow>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Order_by_Order_Number</name>
+        <label>Get Order by Order Number</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SetOrderDetails</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OrderNumber</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>orderNumber</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Order</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Order_by_Order_Number</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>The contact record associated with the identified customer.</description>
+        <name>contactRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <description>Stores the information about the order number, status, and delivery date for the identified order.</description>
+        <name>orderDetails</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the order number provided by the customer to identify a specific order.</description>
+        <name>orderNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

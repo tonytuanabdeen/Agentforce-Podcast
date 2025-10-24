@@ -4,9 +4,17 @@
       "versionName": "ver 0.1",
       "versionNumber": "0.1.0.NEXT",
       "path": "af-knowledge-faq",
-      "default": true,
+      "default": false,
       "package": "Agentforce Knowledge FAQ",
       "versionDescription": ""
+    },  
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "af-order-inquiry",
+      "default": true,
+      "package": "Agentforce Order Inquiry",
+      "versionDescription": ""      
     }
   ],
   "name": "Agentforce-Podcaast-2GP",
@@ -14,6 +22,7 @@
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "65.0",
   "packageAliases": {
-    "Agentforce Knowledge FAQ": "0HoJ6000000fxTJKAY"
+    "Agentforce Knowledge FAQ": "0HoJ6000000fxTJKAY",
+    "Agentforce Order Inquiry": "0HoJ6000000fxTOKAY"
   }
 }
