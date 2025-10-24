@@ -1,5 +1,4 @@
 # Agentforce-Podcast
-Repository for Agentforce Podcast Metadata
 
 ![App logo](docs/gfx/app-logo.png)
 
@@ -10,11 +9,15 @@ This repository contains all the source metadata used to set up **Agentforce** a
 
 ## Table of contents
 
-- [Salesforce CLI Setup](#Salesforce CLI)
-- [Feature activation](#Feature activation)
-- [Repository & Org Setup](#Repository & Org Setup)
-- [Create the default Agentforce Agent User](#Create the default Agentforce Agent User)
-- [Metadata Deployment](#Metadata Deployment)
+- [Salesforce CLI Setup](#Salesforce-CLI)
+
+- [Feature Activation](#Feature-activation)
+
+- [Repository and Org Setup](#Repository-and-Org-Setup)
+
+- [Create the default Agentforce Agent User](#Create-the-default-Agentforce-Agent-User)
+
+- [Metadata Deployment](#Metadata-Deployment)
 
 ### Environment
 
@@ -25,7 +28,7 @@ These applications requires licenses for the following features:
 
 > [!IMPORTANT]
 > Start from a brand-new environment to avoid conflicts with previous work you may have done.
-> Please start by signing up for a Developer Org @ developer.salesforce.com/signup.
+> Please start by signing up for a Developer Org @ [developer.salesforce.com/signup](developer.salesforce.com/signup).
 
 #### Salesforce CLI
 
@@ -37,22 +40,22 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
 
 1️⃣ Ensure that Data Cloud provisioning is complete before proceeding.
 
-    To verify this, navigate to Data Cloud Setup. If you see a Get Started button, click it and allow the setup process to finish — this may take a few minutes.
+- To verify this, navigate to Data Cloud Setup. If you see a Get Started button, click it and allow the setup process to finish — this may take a few minutes.
 
 2️⃣ Turn on Einstein.
 
-    From **Setup**, go to **Einstein Setup** and click **Turn on Einstein**.
+- From **Setup**, go to **Einstein Setup** and click **Turn on Einstein**.
 
 3️⃣ Turn on Agentforce Agents.
 
-    From **Setup**, go to **Agentforce Agents**. You may need to refresh the page to see the Agentforce Agents menu after turning on Einstein.
-    Toggle on **Agentforce**.
+- From **Setup**, go to **Agentforce Agents**. You may need to refresh the page to see the Agentforce Agents menu after turning on Einstein.
+- Toggle on **Agentforce**.
 
 4️⃣ Turn on Einstein Bots.
 
-    From **Setup**, go to **Einstein Bots**. Toggle on **Einstein Bots**.
+- From **Setup**, go to **Einstein Bots**. Toggle on **Einstein Bots**.
 
-### Repository & Org Setup
+### Repository and Org Setup
 
 1️⃣ Clone this repository:
 
