@@ -23,7 +23,7 @@ This repository contains all the source metadata used to set up **Agentforce** a
 - [Episode 01 - Agentforce Answer Questions with Knowledge](#-episode-01-answer-questions-with-knowledge)
 
 
-<!--ts-->
+
    * [Installation](#installation)
    * [Usage](#usage)
       * [STDIN](#stdin)
@@ -39,7 +39,7 @@ This repository contains all the source metadata used to set up **Agentforce** a
    * [Docker](#docker)
      * [Local](#local)
      * [Public](#public)
-<!--te-->
+
 
 
 
