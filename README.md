@@ -5,7 +5,8 @@
 👋 Hello and welcome to Architect’s Guide to Salesforce Agentforce 360! 🌟
 This repo will consists of all the source metadata which I have been used to setup **Agentforce** and showcased during my **Youtube Podcast**.
 
-This repository contains all the source metadata used to set up **Agentforce** and demonstrate the configurations showcased in my ⭕ YouTube **@ArchitectsCallingWithTuan** podcast series.
+This repository contains all the source metadata used to set up **Agentforce** and demonstrate the configurations showcased in my ⭕ YouTube [@ArchitectsCallingWithTuan](https://www.youtube.com/@ArchitectsCallingWithTuan) podcast series. 
+
 
 ## Table of contents
 
@@ -19,7 +20,28 @@ This repository contains all the source metadata used to set up **Agentforce** a
 
 - [Metadata Deployment](#Metadata-Deployment)
 
-- [EP01 - Agentforce Answer Questions with Knowledge](#EP01-Answer-Questions-with-Knowledge)
+- [Episode 01 - Agentforce Answer Questions with Knowledge](#-episode-01-answer-questions-with-knowledge)
+
+
+<!--ts-->
+   * [Installation](#installation)
+   * [Usage](#usage)
+      * [STDIN](#stdin)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+      * [Auto insert and update TOC](#auto-insert-and-update-toc)
+      * [GitHub token](#github-token)
+      * [TOC generation with Github Actions](#toc-generation-with-github-actions)
+   * [Tests](#tests)
+   * [Dependency](#dependency)
+   * [Docker](#docker)
+     * [Local](#local)
+     * [Public](#public)
+<!--te-->
+
+
 
 ## Environment
 
