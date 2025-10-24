@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">	
+	<types>
+		<members>Knowledge__kav.FAQ_Answer__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Knowledge__kav-Knowledge Layout</members>
+		<name>Layout</name>
+	</types>	
+	<types>
+		<members>Knowledge_FAQ_Access</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>Knowledge</members>
+		<name>Settings</name>
+	</types>
+	<types>
+		<members>Marhaba_AI_Agent</members>
+		<name>Bot</name>
+	</types>
+	<types>
+		<members>M_AI_Agent</members>
+		<name>GenAiPlannerBundle</name>
+	</types>			
+	<version>65.0</version>
+</Package>

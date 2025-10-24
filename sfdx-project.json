@@ -1,0 +1,19 @@
+{
+  "packageDirectories": [    
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "af-knowledge-faq",
+      "default": true,
+      "package": "Agentforce Knowledge FAQ",
+      "versionDescription": ""
+    }
+  ],
+  "name": "Agentforce-Podcaast-2GP",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "65.0",
+  "packageAliases": {
+    "Agentforce Knowledge FAQ": "0HoJ6000000fxTJKAY"
+  }
+}
