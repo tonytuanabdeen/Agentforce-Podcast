@@ -10,37 +10,12 @@ This repository contains all the source metadata used to set up **Agentforce** a
 
 ## Table of contents
 
-- [Salesforce CLI Setup](#Salesforce-CLI)
-
-- [Feature Activation](#Feature-activation)
-
-- [Repository and Org Setup](#Repository-and-Org-Setup)
-
-- [Create the default Agentforce Agent User](#Create-the-default-Agentforce-Agent-User)
-
-- [Metadata Deployment](#Metadata-Deployment)
-
-- [Episode 01 - Agentforce Answer Questions with Knowledge](#-episode-01-answer-questions-with-knowledge)
-
-
-
-   * [Installation](#installation)
-   * [Usage](#usage)
-      * [STDIN](#stdin)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-      * [Auto insert and update TOC](#auto-insert-and-update-toc)
-      * [GitHub token](#github-token)
-      * [TOC generation with Github Actions](#toc-generation-with-github-actions)
-   * [Tests](#tests)
-   * [Dependency](#dependency)
-   * [Docker](#docker)
-     * [Local](#local)
-     * [Public](#public)
-
-
+   * [Salesforce CLI Setup](#Salesforce-CLI)
+   * [Feature Activation](#Feature-activation)
+   * [Repository and Org Setup](#Repository-and-Org-Setup)
+   * [Create the default Agentforce Agent User](#Create-the-default-Agentforce-Agent-User)
+   * [Metadata Deployment](#Metadata-Deployment)
+      * [Episode 01 - Agentforce Answer Questions with Knowledge](#️-episode-01-answer-questions-with-knowledge)
 
 
 ## Environment
