@@ -19,7 +19,7 @@ This repository contains all the source metadata used to set up **Agentforce** a
 
 - [Metadata Deployment](#Metadata-Deployment)
 
-    - [Episode 01 - Agentforce Answer Questions with Knowledge](#Episode-01:-Answer-Questions-with-Knowledge)
+- [EP01 - Agentforce Answer Questions with Knowledge](#EP01-Answer-Questions-with-Knowledge)
 
 ## Environment
 
@@ -66,7 +66,7 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
     cd Agentforce-Podcast
     ```
 
-2️⃣ Authorize your org with the Salesforce CLI, set it as the default org for this project and save an alias (`AF-Dev-target` in the command below).
+2. Authorize your org with the Salesforce CLI, set it as the default org for this project and save an alias (`AF-Dev-target` in the command below).
 
     ```bash
     sf org login web -s -a AF-Dev-target
@@ -74,13 +74,15 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
 
 ## Create the default Agentforce Agent User
 
+1. Setup Agent User.
+
     ```bash
     sf apex run -f apex-scripts/setup-agent-user.apex
     ```
 
 ## Metadata Deployment
 
-### Episode 01: Answer Questions with Knowledge
+### ⚙️ Episode 01: Answer Questions with Knowledge
 
 1. Deploy the **af-knowledge-faq** metadata.
 
@@ -88,48 +90,45 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
     sf project deploy start -d af-knowledge-faq
     ```
 
-
 > [!IMPORTANT]
 > This package will deploy the required Permission Sets, enable Lightning Knowledge, and configure the Knowledge__kav custom field along with its page layout.
 > Most importantly, it will also deploy the Agentforce Agent – “Marhaba AI Agent”.
 
-2️⃣ Assign the "Knowledge FAQ Access" permission set to the running user.
+2. Assign the "Knowledge FAQ Access" permission set to the running user.
 
     ```bash
     sf org assign permset -n Knowledge_FAQ_Access
     ```
 
-3️⃣ Assign the permission sets to the default Agent user.
+3. Assign the permission sets to the default Agent user.
 
     ```bash
     sf apex run -f apex-scripts/setup-permissionset-assignment.apex
     ```
 
-4️⃣ Create a Knowledge Article record.
+4. Create a Knowledge Article record.
 
     ```bash
     sf apex run -f apex-scripts/setup-data-knowledge-article.apex
     ```
 
-5️⃣ Now, open the “Marhaba AI Agent” and make the following two configuration updates:
+5. Now, open the “Marhaba AI Agent” and make the following two configuration updates:
 
     From **Setup**, navigate to **Agentforce Agents** and click **Marhaba AI Agent**.
 
     1. Update the Default Agent User
 
-    > Click the inline **Pencil** icon to edit, and set the **Agent User** as the default Agent User.
+    Click the inline **Pencil** icon to edit, and set the **Agent User** as the default Agent User.
 
     2. Create and Assign an Agentforce Data Library
 
-    > Click Open in Builder, then go to the "Data" tab to create and assign an Agentforce Data Library to the agent.
+    Click Open in Builder, then go to the "Data" tab to create and assign an Agentforce Data Library to the agent.
 
-    ```bash
-    Library Name: "Knowledge Article FAQ Data Library "
-    Data Type: "Knowledge"
-    Data Space: "default"
-    Identifying Field: "Title"
-    Identifying Field: "Summary"
-    Content Field: "Details"
-    ```
+    - Library Name: "Knowledge Article FAQ Data Library "
+    - Data Type: "Knowledge"
+    - Data Space: "default"
+    - Identifying Field: "Title"
+    - Identifying Field: "Summary"
+    - Content Field: "Details"
 
 ![Agentforce Data Library Setup](docs/gfx/data-library-setup.png)
