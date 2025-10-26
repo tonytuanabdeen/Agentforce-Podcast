@@ -17,6 +17,7 @@ This repository contains all the source metadata used to set up **Agentforce** a
    * [Metadata Deployment](#Metadata-Deployment)
       * [Episode 01 - Agentforce Answer Questions with Knowledge](#️-episode-01-answer-questions-with-knowledge)
       * [Episode 02 - Agentforce Order Inquiry with Flow-based Custom Actions](#️-episode-02-order-inquiry-with-flow-based-custom-actions)      
+      * [Episode 02 - Agentforce Real-time Currency Conversion with Custom Apex-based Actions](#️-episode-02-order-inquiry-with-flow-based-custom-actions)      
 
 
 ## Environment
@@ -163,3 +164,26 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
     ```bash
     sf apex run -f apex-scripts/setup-data-AccountAndOrder.apex
     ```
+
+### ⚙️ Episode 03: Real-time Currency Conversion with Custom Apex-based Actions
+<hr/>
+
+1. Deploy the **af-currency-conversion** metadata.
+
+    ```bash
+    sf project deploy start -d af-currency-conversion
+    ```
+
+2. Assign the "Agent Action Access" permission set to the default Agent User.
+
+    ```bash
+    sf data query --query "SELECT UserName FROM User WHERE Profile.Name = 'Einstein Agent User' AND IsActive = true"
+    ```
+
+    ```bash
+    sf org permset assign -n Agent_Action_Access -b agent.user@af_dev1761280730.salesforce.com 
+    ```
+> [!NOTE]
+> Perform this Permission Set Assignment step only if you haven’t already assigned the same permission set in the previous module.
+> [!TIP]
+> First, query the Agent User to retrieve the Username, which you’ll need to update in the Permission Set Assignment script above.
