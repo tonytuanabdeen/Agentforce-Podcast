@@ -1,5 +1,5 @@
 {
-  "packageDirectories": [    
+  "packageDirectories": [
     {
       "versionName": "ver 0.1",
       "versionNumber": "0.1.0.NEXT",
@@ -7,14 +7,22 @@
       "default": false,
       "package": "Agentforce Knowledge FAQ",
       "versionDescription": ""
-    },  
+    },
     {
       "versionName": "ver 0.1",
       "versionNumber": "0.1.0.NEXT",
       "path": "af-order-inquiry",
-      "default": true,
+      "default": false,
       "package": "Agentforce Order Inquiry",
-      "versionDescription": ""      
+      "versionDescription": ""
+    },
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "af-currency-conversion",
+      "default": true,
+      "package": "Agentforce Real-time Currency Conversion",
+      "versionDescription": ""
     }
   ],
   "name": "Agentforce-Podcaast-2GP",
@@ -23,6 +31,7 @@
   "sourceApiVersion": "65.0",
   "packageAliases": {
     "Agentforce Knowledge FAQ": "0HoJ6000000fxTJKAY",
-    "Agentforce Order Inquiry": "0HoJ6000000fxTOKAY"
+    "Agentforce Order Inquiry": "0HoJ6000000fxTOKAY",
+    "Agentforce Real-time Currency Conversion": "0HoJ6000000fxTTKAY"
   }
 }

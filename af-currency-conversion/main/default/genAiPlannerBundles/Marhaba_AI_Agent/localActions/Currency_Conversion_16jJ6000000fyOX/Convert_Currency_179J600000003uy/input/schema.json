@@ -1,0 +1,28 @@
+{
+  "required" : [ "amount", "baseCurrency", "targetCurrency" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "amount" : {
+      "title" : "amount",
+      "description" : "Amount for conversion",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "baseCurrency" : {
+      "title" : "baseCurrency",
+      "description" : "Base Currency",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "targetCurrency" : {
+      "title" : "targetCurrency",
+      "description" : "Target Currency",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
