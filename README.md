@@ -17,7 +17,7 @@ This repository contains all the source metadata used to set up **Agentforce** a
    * [Metadata Deployment](#Metadata-Deployment)
       * [Episode 01 - Agentforce Answer Questions with Knowledge](#️-episode-01-answer-questions-with-knowledge)
       * [Episode 02 - Agentforce Order Inquiry with Flow-based Custom Actions](#️-episode-02-order-inquiry-with-flow-based-custom-actions)      
-      * [Episode 02 - Agentforce Real-time Currency Conversion with Custom Apex-based Actions](#️-episode-03-real-time-currency-conversion-with-custom-apex-based-actions)      
+      * [Episode 03 - Agentforce Real-time Currency Conversion with Custom Apex-based Actions](#️-episode-03-real-time-currency-conversion-with-custom-apex-based-actions)      
 
 
 ## Environment
@@ -165,6 +165,11 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
     sf apex run -f apex-scripts/setup-data-AccountAndOrder.apex
     ```
 
+4. Assign an Agentforce Data Library
+
+> [!NOTE]
+> Click Open in Builder, then navigate to the "Data" tab to assign an Agentforce Data Library to the agent — but only if one hasn’t already been assigned.
+
 ### ⚙️ Episode 03: Real-time Currency Conversion with Custom Apex-based Actions
 <hr/>
 
@@ -189,3 +194,8 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
 
 > [!TIP]
 > First, query the Agent User to retrieve the Username, which you’ll need to update in the Permission Set Assignment script above.
+
+3. Assign an Agentforce Data Library
+
+> [!NOTE]
+> Click Open in Builder, then navigate to the "Data" tab to assign an Agentforce Data Library to the agent — but only if one hasn’t already been assigned.
