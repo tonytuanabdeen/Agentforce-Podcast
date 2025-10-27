@@ -28,8 +28,16 @@
       "versionName": "ver 0.1",
       "versionNumber": "0.1.0.NEXT",
       "path": "af-customize-agent-UI",
-      "default": true,
+      "default": false,
       "package": "Agentforce Customize Agent UI with LWC and Lightning Type",
+      "versionDescription": ""
+    },
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "af-update-shipping-address",
+      "default": true,
+      "package": "Agentforce Shipping Address Update",
       "versionDescription": ""
     }
   ],
@@ -41,6 +49,7 @@
     "Agentforce Knowledge FAQ": "0HoJ6000000fxTJKAY",
     "Agentforce Order Inquiry": "0HoJ6000000fxTOKAY",
     "Agentforce Real-time Currency Conversion": "0HoJ6000000fxTTKAY",
-    "Agentforce Customize Agent UI with LWC and Lightning Type": "0HoJ6000000fxTYKAY"
+    "Agentforce Customize Agent UI with LWC and Lightning Type": "0HoJ6000000fxTYKAY",
+    "Agentforce Shipping Address Update": "0HoJ6000000fxTiKAI"
   }
 }

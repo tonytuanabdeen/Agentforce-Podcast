@@ -1,0 +1,18 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "contactRecord" : {
+      "title" : "contactRecord",
+      "description" : "The contact record associated with the identified customer.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Contact"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -35,6 +35,7 @@
 	<types>
 		<members>Agent_Get_Order_by_Order_Number</members>
 		<members>Agent_Identify_Customer_By_Email</members>
+		<members>Agent_Update_Order_Shipping_Address</members>
 		<name>Flow</name>
 	</types>
 	<types>
