@@ -18,8 +18,8 @@ This repository contains all the source metadata used to set up **Agentforce** a
       * [Episode 01 - Agentforce Answer Questions with Knowledge](#️-episode-01-answer-questions-with-knowledge)
       * [Episode 02 - Agentforce Order Inquiry with Flow-based Custom Actions](#️-episode-02-order-inquiry-with-flow-based-custom-actions)      
       * [Episode 03 - Agentforce Real-time Currency Conversion with Custom Apex-based Actions](#️-episode-03-real-time-currency-conversion-with-custom-apex-based-actions) 
-      * [Episode 04 & 05 - Agentforce Customize Agent UI with LWC & Lightning Type](#️-episode-04-customize-agent-ui-with-lwc--custom-lightning-type)
-      * [Episode 06 - Agentforce Updating Shipping Address](#️-episode-04-customize-agent-ui-with-lwc--custom-lightning-type)     
+      * [Episode 04 & 05 - Agentforce Customize Agent UI with LWC & Lightning Type](#️-episode-04--05-customize-agent-ui-with-lwc--custom-lightning-type)
+      * [Episode 06 - Agentforce Updating Shipping Address](#️-episode-06-updating-shipping-address)     
 
 
 ## Environment
