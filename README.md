@@ -17,7 +17,8 @@ This repository contains all the source metadata used to set up **Agentforce** a
    * [Metadata Deployment](#Metadata-Deployment)
       * [Episode 01 - Agentforce Answer Questions with Knowledge](#️-episode-01-answer-questions-with-knowledge)
       * [Episode 02 - Agentforce Order Inquiry with Flow-based Custom Actions](#️-episode-02-order-inquiry-with-flow-based-custom-actions)      
-      * [Episode 03 - Agentforce Real-time Currency Conversion with Custom Apex-based Actions](#️-episode-03-real-time-currency-conversion-with-custom-apex-based-actions)      
+      * [Episode 03 - Agentforce Real-time Currency Conversion with Custom Apex-based Actions](#️-episode-03-real-time-currency-conversion-with-custom-apex-based-actions) 
+      * [Episode 04 - Agentforce Customize Agent UI with LWC & Lightning Type](#️-episode-02-order-inquiry-with-flow-based-custom-actions)     
 
 
 ## Environment
@@ -179,6 +180,9 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
     sf project deploy start -d af-currency-conversion
     ```
 
+> [!NOTE]
+> This package will deploy the required Permission Set, Apex Class & the updated “Marhaba AI Agent” with "Currency Conversion" Topic and relavant Actions.
+
 2. Assign the "Agent Action Access" permission set to the default Agent User.
 
     ```bash
@@ -199,3 +203,37 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
 
 > [!NOTE]
 > Click Open in Builder, then navigate to the "Data" tab to assign an Agentforce Data Library to the agent — but only if one hasn’t already been assigned.
+
+
+### ⚙️ Episode 04: Customize Agent UI with LWC & Custom Lightning Type
+<hr/>
+
+1. Deploy the **af-customize-agent-UI** metadata.
+
+    ```bash
+    sf project deploy start -d af-customize-agent-UI
+    ```
+
+> [!NOTE]
+> This package will deploy the required Permission Set, Apex Class, LWC, Custom Lightning Type & the updated “Marhaba AI Agent” & new "Marhaba Employee Agent" with the "In-Store Appointment Scheduling for Footwear Returns" Topic and relavant Actions.
+
+2. Assign the "Agent Action Access" permission set to the default Agent User.
+
+    ```bash
+    sf data query --query "SELECT UserName FROM User WHERE Profile.Name = 'Einstein Agent User' AND IsActive = true"
+    ```
+
+    ```bash
+    sf org permset assign -n Agent_Action_Access -b agent.user@af_dev1761280730.salesforce.com 
+    ```
+> [!NOTE]
+> Perform this Permission Set Assignment step only if you haven’t already assigned the same permission set in the previous module.
+
+
+> [!TIP]
+> First, query the Agent User to retrieve the Username, which you’ll need to update in the Permission Set Assignment script above.
+
+3. Assign an Agentforce Data Library
+
+> [!NOTE]
+> Click “Marhaba AI Agent” -> Open in Builder, then navigate to the "Data" tab to assign an Agentforce Data Library to the agent — but only if one hasn’t already been assigned.
