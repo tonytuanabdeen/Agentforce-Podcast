@@ -1,0 +1,8 @@
+:host {
+    --slds-c-card-sizing-border: 1px;
+}
+
+lightning-card.AppointmentCard article.slds-card {
+    border: 1px solid rgb(201, 201, 201) !important;
+    margin-bottom: 3px !important;
+}

@@ -1,0 +1,14 @@
+{
+  "required" : [ "noOfAppointments" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "noOfAppointments" : {
+      "title" : "noOfAppointments",
+      "description" : "Number of Appointments",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

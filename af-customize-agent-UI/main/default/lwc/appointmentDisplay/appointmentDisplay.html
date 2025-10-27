@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Available Appointments" icon-name="standard:key_dates">        
+        <div class="list-container slds-p-around_medium">
+            <template if:true={appointmentData}>                                       
+                <template for:each={appointmentData} for:item="app">
+                    <div key={app.appointmentId} class="card">                               
+                        <lightning-card title={app.location} icon-name="standard:location" class="AppointmentCard"> 
+                            <div class="rating">                                
+                                <strong>Rating:</strong>
+                                <template for:each={app.stars} for:item="star"> ⭐</template>
+                            </div>
+                            <div class="time">
+                                <strong>Appointment Time:</strong> {app.appointmentTime}
+                            </div>
+                            <div class="duration">
+                                <strong>Appointment Duration:</strong> {app.duration} mins
+                            </div>
+                        </lightning-card>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

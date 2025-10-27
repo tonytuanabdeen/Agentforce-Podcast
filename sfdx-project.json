@@ -20,8 +20,16 @@
       "versionName": "ver 0.1",
       "versionNumber": "0.1.0.NEXT",
       "path": "af-currency-conversion",
-      "default": true,
+      "default": false,
       "package": "Agentforce Real-time Currency Conversion",
+      "versionDescription": ""
+    },
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "af-customize-agent-UI",
+      "default": true,
+      "package": "Agentforce Customize Agent UI with LWC and Lightning Type",
       "versionDescription": ""
     }
   ],
@@ -32,6 +40,7 @@
   "packageAliases": {
     "Agentforce Knowledge FAQ": "0HoJ6000000fxTJKAY",
     "Agentforce Order Inquiry": "0HoJ6000000fxTOKAY",
-    "Agentforce Real-time Currency Conversion": "0HoJ6000000fxTTKAY"
+    "Agentforce Real-time Currency Conversion": "0HoJ6000000fxTTKAY",
+    "Agentforce Customize Agent UI with LWC and Lightning Type": "0HoJ6000000fxTYKAY"
   }
 }

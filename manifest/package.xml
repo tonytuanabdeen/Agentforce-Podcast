@@ -10,6 +10,7 @@
 	</types>
 	<types>
 		<members>CurrencyConvertionService</members>
+		<members>AppointmentTimeService</members>
 		<name>ApexClass</name>
 	</types>	
 	<types>		
@@ -23,10 +24,12 @@
 	</types>
 	<types>
 		<members>Marhaba_AI_Agent</members>
+		<members>Marhaba_Employee_Agent</members>
 		<name>Bot</name>
 	</types>
 	<types>
 		<members>Marhaba_AI_Agent</members>
+		<members>Marhaba_Employee_Agent</members>
 		<name>GenAiPlannerBundle</name>
 	</types>
 	<types>
@@ -37,6 +40,14 @@
 	<types>
 		<members>exchangerate_api</members>
 		<name>RemoteSiteSetting</name>
+	</types>
+	<types>
+		<members>appointmentDisplay</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>appointmentResponse</members>
+		<name>LightningTypeBundle</name>
 	</types>
 	<version>65.0</version>
 </Package>

@@ -1,0 +1,5 @@
+{
+  "title" : "Available Appointment Response",
+  "description" : "Available Appointment Response",
+  "lightning:type" : "@apexClassType/c__AppointmentTimeService$AvailableTimes"
+}

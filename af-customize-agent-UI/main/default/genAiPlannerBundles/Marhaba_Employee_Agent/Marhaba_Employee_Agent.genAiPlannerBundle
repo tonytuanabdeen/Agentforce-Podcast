@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Helps employees to work on customers enquiries.</description>
+    <localActionLinks>
+        <genAiFunctionName>AnswerQuestionsWithKnowledge_16jJ6000000fyT5</genAiFunctionName>
+    </localActionLinks>
+    <localTopicLinks>
+        <genAiPluginName>In_Store_Appointment_Scheduling_for_Footwear_Returns_16jJ6000000fyT5</genAiPluginName>
+    </localTopicLinks>
+    <localTopics>
+        <fullName>In_Store_Appointment_Scheduling_for_Footwear_Returns_16jJ6000000fyT5</fullName>
+        <canEscalate>true</canEscalate>
+        <description>Handles user requests related to available appointment time slots.</description>
+        <developerName>In_Store_Appointment_Scheduling_for_Footwear_Returns_16jJ6000000fyT5</developerName>
+        <genAiPluginInstructions>
+            <description>When an user requests for available time slots, do not ask for any questions, instead provide the available next appointment times.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>The response should include details such as the location, appointment time, duration, and the location’s rating.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Agent_Find_Avaiable_Time_Slots_179J600000003ga</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Agent_Find_Avaiable_Time_Slots_179J600000003ga</fullName>
+            <description>Find the next available appointment time slots</description>
+            <developerName>Agent_Find_Avaiable_Time_Slots_179J600000003ga</developerName>
+            <invocationTarget>AppointmentTimeService</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Agent_Find_Avaiable_Time_Slots</localDeveloperName>
+            <masterLabel>Agent Find Avaiable Time Slots</masterLabel>
+            <progressIndicatorMessage>Getting next available Appointments</progressIndicatorMessage>
+        </localActions>
+        <localDeveloperName>In_Store_Appointment_Scheduling_for_Footwear_Returns</localDeveloperName>
+        <masterLabel>In-Store Appointment Scheduling for Footwear Returns</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is only to assist users with providing available appointment time slots, including time, duration and location. Do not provide advice or handle unrelated topics.</scope>
+    </localTopics>
+    <masterLabel>Marhaba Employee Agent</masterLabel>
+    <plannerActions>
+        <fullName>AnswerQuestionsWithKnowledge_16jJ6000000fyT5</fullName>
+        <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+        <developerName>AnswerQuestionsWithKnowledge_16jJ6000000fyT5</developerName>
+        <invocationTarget>streamKnowledgeSearch</invocationTarget>
+        <invocationTargetType>standardInvocableAction</invocationTargetType>
+        <isConfirmationRequired>false</isConfirmationRequired>
+        <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+        <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+        <masterLabel>Answer Questions with Knowledge</masterLabel>
+        <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+        <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+    </plannerActions>
+    <plannerSurfaces>
+        <adaptiveResponseAllowed>true</adaptiveResponseAllowed>
+        <callRecordingAllowed>false</callRecordingAllowed>
+        <surface>SurfaceAction__Messaging</surface>
+        <surfaceType>Messaging</surfaceType>
+    </plannerSurfaces>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlannerBundle>
