@@ -20,7 +20,7 @@ This repository contains all the source metadata used to set up **Agentforce** a
       * [Episode 03 - Agentforce Real-time Currency Conversion with Custom Apex-based Actions](#️-episode-03-real-time-currency-conversion-with-custom-apex-based-actions) 
       * [Episode 04 & 05 - Agentforce Customize Agent UI with LWC & Lightning Type](#️-episode-04--05-customize-agent-ui-with-lwc--custom-lightning-type)
       * [Episode 06 - Agentforce Updating Shipping Address](#️-episode-06-updating-shipping-address)
-      * [Episode 07 - Agentforce Escalte to a Human Agent](#️-episode-06-updating-shipping-address)     
+      * [Episode 07 - Agentforce Escalte to a Human Agent](#️-episode-07-escalate-to-a-human-agent)     
 
 
 ## Environment
