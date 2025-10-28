@@ -1,0 +1,15 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "outcomeMessage" : {
+      "title" : "outcomeMessage",
+      "description" : "Stores the message that lets the customer know whether the order was successfully cancelled. Note: This variable is a placeholder for enablement purposes and the process of assigning it a value must be reconfigured with the rest of the Flow in order for it to contain a meaningful value.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

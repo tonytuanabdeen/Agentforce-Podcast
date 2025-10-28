@@ -36,8 +36,24 @@
       "versionName": "ver 0.1",
       "versionNumber": "0.1.0.NEXT",
       "path": "af-update-shipping-address",
-      "default": true,
+      "default": false,
       "package": "Agentforce Shipping Address Update",
+      "versionDescription": ""
+    },
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "af-escalate-to-human",
+      "default": true,
+      "package": "Agentforce Escalating to a Human",
+      "versionDescription": ""
+    },
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "af-escalate-to-human-MIAW",
+      "default": false,
+      "package": "Agentforce Escalating to a Human MIAW",
       "versionDescription": ""
     }
   ],
@@ -50,6 +66,8 @@
     "Agentforce Order Inquiry": "0HoJ6000000fxTOKAY",
     "Agentforce Real-time Currency Conversion": "0HoJ6000000fxTTKAY",
     "Agentforce Customize Agent UI with LWC and Lightning Type": "0HoJ6000000fxTYKAY",
-    "Agentforce Shipping Address Update": "0HoJ6000000fxTiKAI"
+    "Agentforce Shipping Address Update": "0HoJ6000000fxTiKAI",
+    "Agentforce Escalating to a Human": "0HoJ6000000fxTnKAI",
+    "Agentforce Escalating to a Human MIAW": "0HoJ6000000fxTsKAI"
   }
 }

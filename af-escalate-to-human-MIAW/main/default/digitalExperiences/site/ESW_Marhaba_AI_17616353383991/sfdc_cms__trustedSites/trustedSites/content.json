@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__trustedSites",
+  "title" : "trustedSites",
+  "contentBody" : {
+    "trustedSites" : [ {
+      "isActive" : true,
+      "source" : "https://orgfarm-943cccb20a-dev-ed.develop.my.salesforce-scrt.com",
+      "sourceName" : "Enhanced Web Chat host"
+    } ]
+  },
+  "urlName" : "trustedsites"
+}

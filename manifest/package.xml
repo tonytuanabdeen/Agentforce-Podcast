@@ -11,15 +11,28 @@
 	<types>
 		<members>CurrencyConvertionService</members>
 		<members>AppointmentTimeService</members>
+		<members>CommunitiesLandingController</members>
 		<name>ApexClass</name>
 	</types>	
+	<types>
+		<members>CommunitiesLanding</members>
+		<name>ApexPage</name>
+	</types>
+	<types>
+		<members>Marhaba_Console_UtilityBar</members>
+		<name>FlexiPage</name>
+	</types>
 	<types>		
 		<members>Knowledge_FAQ_Access</members>
 		<members>Agent_Action_Access</members>
+		<members>Agent_Service_Presence</members>
 		<name>PermissionSet</name>
 	</types>
 	<types>
 		<members>Knowledge</members>
+		<members>OmniChannel</members>
+		<members>LiveMessage</members>
+		<members>ExperienceBundle</<members>
 		<name>Settings</name>
 	</types>
 	<types>
@@ -36,6 +49,8 @@
 		<members>Agent_Get_Order_by_Order_Number</members>
 		<members>Agent_Identify_Customer_By_Email</members>
 		<members>Agent_Update_Order_Shipping_Address</members>
+		<members>Agent_Route_Conversations_to_Human</members>
+		<members>Agent_Route_to_AI</members>
 		<name>Flow</name>
 	</types>
 	<types>
@@ -49,6 +64,72 @@
 	<types>
 		<members>appointmentResponse</members>
 		<name>LightningTypeBundle</name>
+	</types>
+	<types>
+		<members>Marhaba_Agent_Routing_Queue</members>
+		<name>Queue</name>
+	</types>
+	<types>
+		<members>Marhaba_Agent_Routing_Config</members>
+		<name>QueueRoutingConfig</name>
+	</types>
+	<types>
+		<members>AI_Agent_Available</members>
+		<name>ServicePresenceStatus</name>
+	</types>
+	<types>
+		<members>sfdc_livemessage</members>
+		<name>ServiceChannel</name>
+	</types>
+	<types>
+		<members>Marhaba_AI</members>
+		<name>MessagingChannel</name>
+	</types>
+	<types>
+		<members>Marhaba_AI</members>
+		<name>EmbeddedServiceConfig</name>
+	</types>
+	<types>
+		<members>Marhaba_Console</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>		
+		<members>Marhaba_Service</members>
+		<name>CustomSite</name>
+	</types>	
+	<types>
+		<members>ESW_Marhaba_AI_1761635338399</members>
+		<members>Marhaba Service</members>
+		<name>Network</name>
+	</types>
+	<types>
+		<members>SFDC_Default_Navigation_Marhaba_Service</members>
+		<name>NavigationMenu</name>
+	</types>
+	<types>		
+		<members>site/ESW_Marhaba_AI_17616353383991</members>			
+		<name>DigitalExperienceBundle</name>
+	</types>
+	<types>
+		<members>ESW_Marhaba_AI_17616353383991</members>		
+		<name>DigitalExperienceConfig</name>
+	</types>
+	<types>		
+		<members>Marhaba_Service1</members>
+		<name>ExperienceBundle</name>
+	</types>
+	<types>
+		<members>https_my_site_com</members>
+		<name>CorsWhitelistOrigin</name>
+	</types>
+	<types>
+		<members>ESA_Embedded_Service_Wildcard</members>
+		<members>ESA_Web_Deployment_Wildcard</members>
+		<name>CspTrustedSite</name>
+	</types>
+	<types>		
+		<members>SNA_tLPJq_sf_default_cdn_Marhaba_Service1</members>
+		<name>StaticResource</name>
 	</types>
 	<version>65.0</version>
 </Package>
