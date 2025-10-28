@@ -19,7 +19,8 @@ This repository contains all the source metadata used to set up **Agentforce** a
       * [Episode 02 - Agentforce Order Inquiry with Flow-based Custom Actions](#️-episode-02-order-inquiry-with-flow-based-custom-actions)      
       * [Episode 03 - Agentforce Real-time Currency Conversion with Custom Apex-based Actions](#️-episode-03-real-time-currency-conversion-with-custom-apex-based-actions) 
       * [Episode 04 & 05 - Agentforce Customize Agent UI with LWC & Lightning Type](#️-episode-04--05-customize-agent-ui-with-lwc--custom-lightning-type)
-      * [Episode 06 - Agentforce Updating Shipping Address](#️-episode-06-updating-shipping-address)     
+      * [Episode 06 - Agentforce Updating Shipping Address](#️-episode-06-updating-shipping-address)
+      * [Episode 07 - Agentforce Escalte to a Human Agent](#️-episode-06-updating-shipping-address)     
 
 
 ## Environment
@@ -272,3 +273,54 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
 
 > [!NOTE]
 > Click “Marhaba AI Agent” -> Open in Builder, then navigate to the "Data" tab to assign an Agentforce Data Library to the agent — but only if one hasn’t already been assigned.
+
+
+### ⚙️ Episode 07: Escalate to a Human Agent
+<hr/>
+
+1. Turn on Digital Experience 
+
+- From **Setup**, go to **Digital Experience** and click **Turn on**.
+
+- Also **Enable ExperienceBundle Metadata API** setting.
+
+2. Deploy the **af-escalate-to-human** metadata.
+
+    ```bash
+    sf project deploy start -d af-escalate-to-human
+    ```
+
+> [!NOTE]
+> This package will deploy the required Permission Set, Omni-channel, Routing Configuration, Queue, custom Site, Inbound and Outbound Flows & the updated “Marhaba AI Agent” with the standard "Escalation" Topic.
+
+3. Assign the "Agent Service Presence" permission set to the running user.
+
+    ```bash
+    sf org assign permset -n Agent_Service_Presence
+    ```
+
+4. Manually create a **Messaging for In-app and Web (MIAW)**
+
+- Name = "Marhaba AI"
+- Site endpoint = my.site.com
+- once created, activate & publish
+- Edit Settings > Show typing indicators = true
+
+5. Deploy the **af-escalate-to-human-MIAW** metadata.
+
+    ```bash
+    sf project deploy start -d af-escalate-to-human-MIAW
+    ```
+
+6. Assign an Agentforce Data Library
+
+> [!NOTE]
+> Click “Marhaba AI Agent” -> Open in Builder, then navigate to the "Data" tab to assign an Agentforce Data Library to the agent — but only if one hasn’t already been assigned.
+
+7. Setup the **Connection** Tab
+
+![Connection Setting as Follows](docs/gfx/agent-connection-settings.png)
+
+
+> [!TIP]
+> Activate "Marhaba - AI Agent" & also publish the "Marhaba Service" custom site.
