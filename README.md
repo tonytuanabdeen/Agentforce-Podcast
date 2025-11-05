@@ -21,7 +21,7 @@ This repository contains all the source metadata used to set up **Agentforce** a
       * [Episode 04 & 05 - Agentforce Customize Agent UI with LWC & Lightning Type](#️-episode-04--05-customize-agent-ui-with-lwc--custom-lightning-type)
       * [Episode 06 - Agentforce Updating Shipping Address](#️-episode-06-updating-shipping-address)
       * [Episode 07 - Agentforce Escalte to a Human Agent](#️-episode-07-escalate-to-a-human-agent)  
-      * [Episode 08 - Agentforce A2A - The Art of Smart Delegation](#️-episode-07-escalate-to-a-human-agent)     
+      * [Episode 08 - Agentforce A2A - The Art of Smart Delegation](#️-episode-08-a2a---the-art-of-smart-delegation-between-ai-agents)     
 
 
 ## Environment
@@ -327,7 +327,7 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
 > Activate "Marhaba - AI Agent" & also publish the "Marhaba Service" custom site.
 
 
-### ⚙️ Episode 08: A2A - The Art of Smart Delegation
+### ⚙️ Episode 08: A2A - The Art of Smart Delegation between AI Agents
 <hr/>
 
 1. Deploy the **af-A2A-agent2** metadata.
