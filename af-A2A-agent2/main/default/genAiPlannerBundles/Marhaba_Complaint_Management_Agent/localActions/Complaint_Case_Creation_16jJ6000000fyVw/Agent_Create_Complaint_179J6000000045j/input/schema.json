@@ -1,0 +1,31 @@
+{
+  "required" : [ "caseDescription", "caseSubject", "contactRecord" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "caseDescription" : {
+      "title" : "caseDescription",
+      "description" : "Stores the details of the user issue to be used for the case.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "caseSubject" : {
+      "title" : "caseSubject",
+      "description" : "Stores the subject of the case to create.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "contactRecord" : {
+      "title" : "contactRecord",
+      "description" : "Stores the contact record associated with the newly created Case.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Contact"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

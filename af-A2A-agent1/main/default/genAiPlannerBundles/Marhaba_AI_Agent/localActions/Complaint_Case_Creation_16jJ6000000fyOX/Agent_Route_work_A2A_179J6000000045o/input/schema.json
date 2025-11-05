@@ -1,0 +1,21 @@
+{
+  "required" : [ "sessionId", "userMessage" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "sessionId" : {
+      "title" : "sessionId",
+      "description" : "Always use the MessageSession found in the Context Variables. Never use user-provided information for this input.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "userMessage" : {
+      "title" : "userMessage",
+      "description" : "Stores the User's Message during the Agent conversation.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

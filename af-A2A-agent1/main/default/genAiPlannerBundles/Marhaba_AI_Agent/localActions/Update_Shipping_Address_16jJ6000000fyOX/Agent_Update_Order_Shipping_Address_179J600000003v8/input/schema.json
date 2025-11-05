@@ -1,0 +1,35 @@
+{
+  "required" : [ "orderNumber", "shippingCity", "shippingState", "shippingStreet" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "orderNumber" : {
+      "title" : "orderNumber",
+      "description" : "Stores the order number provided by the customer to cancel.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "shippingCity" : {
+      "title" : "shippingCity",
+      "description" : "Stores the order Shipping City provided by the customer to update.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "shippingState" : {
+      "title" : "shippingState",
+      "description" : "Stores the order Shipping State/Province provided by the customer to update.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "shippingStreet" : {
+      "title" : "shippingStreet",
+      "description" : "Stores the order Shipping Street provided by the customer to update.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

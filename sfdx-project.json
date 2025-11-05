@@ -55,6 +55,22 @@
       "default": false,
       "package": "Agentforce Escalating to a Human MIAW",
       "versionDescription": ""
+    },
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "af-A2A-agent2",
+      "default": false,
+      "package": "Agentforce A2A - Agent2",
+      "versionDescription": ""
+    },
+    {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "path": "af-A2A-agent1",
+      "default": true,
+      "package": "Agentforce A2A - Agent1",
+      "versionDescription": ""
     }
   ],
   "name": "Agentforce-Podcaast-2GP",
@@ -68,6 +84,8 @@
     "Agentforce Customize Agent UI with LWC and Lightning Type": "0HoJ6000000fxTYKAY",
     "Agentforce Shipping Address Update": "0HoJ6000000fxTiKAI",
     "Agentforce Escalating to a Human": "0HoJ6000000fxTnKAI",
-    "Agentforce Escalating to a Human MIAW": "0HoJ6000000fxTsKAI"
+    "Agentforce Escalating to a Human MIAW": "0HoJ6000000fxTsKAI",
+    "Agentforce A2A - Agent2": "0HoJ6000000fxU2KAI",
+    "Agentforce A2A - Agent1": "0HoJ6000000fxU7KAI"
   }
 }

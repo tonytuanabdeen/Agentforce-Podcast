@@ -38,11 +38,13 @@
 	<types>
 		<members>Marhaba_AI_Agent</members>
 		<members>Marhaba_Employee_Agent</members>
+		<members>Marhaba_Complaint_Management_Agent</members>
 		<name>Bot</name>
 	</types>
 	<types>
 		<members>Marhaba_AI_Agent</members>
 		<members>Marhaba_Employee_Agent</members>
+		<members>Marhaba_Complaint_Management_Agent</members>
 		<name>GenAiPlannerBundle</name>
 	</types>
 	<types>
@@ -51,6 +53,8 @@
 		<members>Agent_Update_Order_Shipping_Address</members>
 		<members>Agent_Route_Conversations_to_Human</members>
 		<members>Agent_Route_to_AI</members>
+		<members>Agent_Create_Complaint</members>
+		<members>Agent_Route_work_A2A</members>
 		<name>Flow</name>
 	</types>
 	<types>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Deliver personalized customer interactions with an autonomous AI agent. Agentforce Service Agent intelligently supports your customers with common inquiries and escalates complex issues.</description>
+    <localActionLinks>
+        <genAiFunctionName>AnswerQuestionsWithKnowledge_16jJ6000000fyOX</genAiFunctionName>
+    </localActionLinks>
+    <localTopicLinks>
+        <genAiPluginName>Complaint_Case_Creation_16jJ6000000fyOX</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Currency_Conversion_16jJ6000000fyOX</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Escalation_16jJ6000000fyOX</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>In_Store_Appointment_Scheduling_for_Footwear_Returns_16jJ6000000fyOX</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>OrderInquiries_16jJ6000000fyOX</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Return_and_Exchange_Policies_16jJ6000000fyOX</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Update_Shipping_Address_16jJ6000000fyOX</genAiPluginName>
+    </localTopicLinks>
+    <localTopics>
+        <fullName>Update_Shipping_Address_16jJ6000000fyOX</fullName>
+        <canEscalate>true</canEscalate>
+        <description>Allows customers to update the shipping address for an existing order by providing the order number and new shipping details.</description>
+        <developerName>Update_Shipping_Address_16jJ6000000fyOX</developerName>
+        <genAiPluginInstructions>
+            <description>When Shipping address changes are requested, ask the customer for the new shipping address that they would like the delivery to be sent to.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Request the new shipping details, including ShippingStreet, ShippingCity, and ShippingState.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Confirm the provided shipping address details with the customer before proceeding.</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the order is not eligible for an address updIf the order number is not available, ask if the customer would like to escalate the request to a human agent.ate, inform the user and provide alternative options, such as contacting customer support.</description>
+            <developerName>instruction_4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 4</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Convert dates to YYYY-MM-DD for the customer, but do not request the customer to provide the date in that format. Show the dates in a user friendly format.</description>
+            <developerName>instruction_5</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 5</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Agent_Update_Order_Shipping_Address_179J600000003v8</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Agent_Update_Order_Shipping_Address_179J600000003v8</fullName>
+            <description>Updates customer’s order with new shipping details.</description>
+            <developerName>Agent_Update_Order_Shipping_Address_179J600000003v8</developerName>
+            <invocationTarget>Agent_Update_Order_Shipping_Address</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>true</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Agent_Update_Order_Shipping_Address</localDeveloperName>
+            <masterLabel>Agent - Update Order Shipping Address</masterLabel>
+            <progressIndicatorMessage>Updating new shipping details.</progressIndicatorMessage>
+        </localActions>
+        <localDeveloperName>Update_Shipping_Address</localDeveloperName>
+        <masterLabel>Update Shipping Address</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is only to assist customers in updating the shipping address for an existing order by collecting the order number and new shipping details, including ShippingStreet, ShippingCity, and ShippingState. Do not handle inquiries unrelated to updating shipping addresses.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>Currency_Conversion_16jJ6000000fyOX</fullName>
+        <canEscalate>true</canEscalate>
+        <description>Handles user requests related to converting one currency to another, providing exchange rates, and performing related calculations.</description>
+        <developerName>Currency_Conversion_16jJ6000000fyOX</developerName>
+        <genAiPluginInstructions>
+            <description>Provide the current exchange rate when requested by the user.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Perform currency conversion calculations based on the user&apos;s input amounts and specified currencies.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ask clarifying questions if the user does not specify the currencies or amounts for conversion.</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Inform the user of any limitations or disclaimers regarding the accuracy of exchange rates.</description>
+            <developerName>instruction_4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 4</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Convert_Currency_179J600000003uy</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Convert_Currency_179J600000003uy</fullName>
+            <description>When a user requests a currency conversion, ask for the amount, the base currency, and the target currency.</description>
+            <developerName>Convert_Currency_179J600000003uy</developerName>
+            <invocationTarget>CurrencyConvertionService</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Convert_Currency</localDeveloperName>
+            <masterLabel>Convert Currency</masterLabel>
+            <progressIndicatorMessage>Getting Conversion Rates</progressIndicatorMessage>
+        </localActions>
+        <localDeveloperName>Currency_Conversion</localDeveloperName>
+        <masterLabel>Currency Conversion</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is only to assist users with currency conversion inquiries, including providing current exchange rates, calculating conversions, and answering related questions. Do not provide financial advice or handle unrelated topics.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>Escalation_16jJ6000000fyOX</fullName>
+        <canEscalate>true</canEscalate>
+        <description>Handles requests from users who want to transfer or escalate their conversation to a live human agent.</description>
+        <developerName>Escalation_16jJ6000000fyOX</developerName>
+        <genAiPluginInstructions>
+            <description>If a user explicitly asks to transfer to a live agent, escalate the conversation.</description>
+            <developerName>escalateonrequest</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>escalate-on-request</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If escalation to a live agent fails for any reason, acknowledge the issue and ask the user whether they would like to log a support case instead.</description>
+            <developerName>promptonescalationfailure</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>prompt-on-escalation-failure</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>Escalation</localDeveloperName>
+        <masterLabel>Escalation</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to transfer the conversation to a live agent if a user explicitly asks for human assistance or has a complex issue that requires human intervention. If escalation fails, ask the user whether they would like to log a support case so the issue is recorded for follow-up.</scope>
+        <source>SvcCopilotTmpl__Escalation</source>
+    </localTopics>
+    <localTopics>
+        <fullName>Return_and_Exchange_Policies_16jJ6000000fyOX</fullName>
+        <canEscalate>true</canEscalate>
+        <description>This topic is used to address customer inquiries about guidelines for returning or exchanging footwear purchased from TonyTuan. It covers eligibility criteria, timelines, and process steps for returns or exchanges.</description>
+        <developerName>Return_and_Exchange_Policies_16jJ6000000fyOX</developerName>
+        <genAiPluginInstructions>
+            <description>If the query is about eligibility for a return or exchange, provide the relevant policy details.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the customer asks about timelines for returns or exchanges, explain the allowed timeframe.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the query is about the process to initiate a return or exchange, guide the customer with the required steps.</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithKnowledge_179J600000003qb</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>AnswerQuestionsWithKnowledge_179J600000003qb</fullName>
+            <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+            <developerName>AnswerQuestionsWithKnowledge_179J600000003qb</developerName>
+            <invocationTarget>streamKnowledgeSearch</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+            <masterLabel>Answer Questions with Knowledge</masterLabel>
+            <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+            <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+        </localActions>
+        <localDeveloperName>Return_and_Exchange_Policies</localDeveloperName>
+        <masterLabel>Return and Exchange Policies</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to only provide information about the return and exchange policies for footwear, including eligibility, timelines, and steps to initiate the process. You aren&apos;t able to process returns or exchanges directly.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>Complaint_Case_Creation_16jJ6000000fyOX</fullName>
+        <canEscalate>true</canEscalate>
+        <description>Handles customer requests related to creating complaint cases for issues or concerns.</description>
+        <developerName>Complaint_Case_Creation_16jJ6000000fyOX</developerName>
+        <genAiPluginInstructions>
+            <description>Ask the customer for details regarding their complaint, including relevant context or specifics.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the customer does not have all necessary details, inquire whether they would like to escalate to an agent or proceed with partial information.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Guide the customer on the required steps to complete the complaint case creation process.</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ensure the complaint case includes all necessary information for resolution, such as contact details and issue description.</description>
+            <developerName>instruction_4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 4</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Provide clear options for next steps, such as tracking the complaint or escalating further if needed.</description>
+            <developerName>instruction_5</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 5</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Agent_Route_work_A2A_179J6000000045o</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Agent_Route_work_A2A_179J6000000045o</fullName>
+            <description>Routing Agent to the Marhaba Complaint Management Agent</description>
+            <developerName>Agent_Route_work_A2A_179J6000000045o</developerName>
+            <invocationTarget>Agent_Route_work_A2A</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Agent_Route_work_A2A</localDeveloperName>
+            <masterLabel>Agent - Route work A2A</masterLabel>
+            <progressIndicatorMessage>Routing to Marhaba Complaint Management Agent</progressIndicatorMessage>
+        </localActions>
+        <localDeveloperName>Complaint_Case_Creation</localDeveloperName>
+        <masterLabel>Complaint Case Creation</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is only to assist customers in creating complaint cases by gathering relevant information and guiding them through the process.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>In_Store_Appointment_Scheduling_for_Footwear_Returns_16jJ6000000fyOX</fullName>
+        <canEscalate>true</canEscalate>
+        <description>Handles user requests related to available appointment time slots.</description>
+        <developerName>In_Store_Appointment_Scheduling_for_Footwear_Returns_16jJ6000000fyOX</developerName>
+        <genAiPluginInstructions>
+            <description>When a user requests available time slots, do not ask additional questions. Instead, provide the next available appointment times.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>The response should include details such as the location, appointment time, duration, and the location’s rating.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Agent_Find_Avaiable_Time_Slots_179J600000003v3</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Agent_Find_Avaiable_Time_Slots_179J600000003v3</fullName>
+            <description>Find the next available appointment time slots.</description>
+            <developerName>Agent_Find_Avaiable_Time_Slots_179J600000003v3</developerName>
+            <invocationTarget>AppointmentTimeService</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Agent_Find_Avaiable_Time_Slots</localDeveloperName>
+            <masterLabel>Agent Find Avaiable Time Slots</masterLabel>
+            <progressIndicatorMessage>Getting next available Appointments.</progressIndicatorMessage>
+        </localActions>
+        <localDeveloperName>In_Store_Appointment_Scheduling_for_Footwear_Returns</localDeveloperName>
+        <masterLabel>In-Store Appointment Scheduling for Footwear Returns</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is only to assist users with providing available appointment time slots, including time, duration and location. Do not provide advice or handle unrelated topics.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>OrderInquiries_16jJ6000000fyOX</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Handles questions related to a user’s order, order status, or order updates.</description>
+        <developerName>OrderInquiries_16jJ6000000fyOX</developerName>
+        <genAiPluginInstructions>
+            <description>When scheduling changes are requested, ask the customer for a date that they would like the delivery scheduled and look up available time slots.</description>
+            <developerName>Instruction1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If a package is lost, immediately escalate the issue to a live agent.</description>
+            <developerName>Instruction2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction2</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Convert dates to YYYY-MM-DD for the customer, but do not request the customer to provide the dates in that format. Show dates in a user friendly way.</description>
+            <developerName>Instruction3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction3</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the customer is not known, always ask for their email address and get their Contact record before running any other actions.</description>
+            <developerName>Instruction4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction4</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Use the Answer Questions with Knowledge action for answering general order questions.</description>
+            <developerName>Instruction5</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction5</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Acknowledge and validate user concerns with empathy and professionalism.</description>
+            <developerName>Instruction6</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction6</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If an order&apos;s status is delivered, deny cancellation of the order.</description>
+            <developerName>Instruction7</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction7</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Agent_Identify_Customer_By_Email_179J600000003qg</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Agent_Get_Order_by_Order_Number_179J600000003qg</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Agent_Get_Order_by_Order_Number_179J600000003qg</fullName>
+            <description>Returns the order information associated with a given contact ID and order number.</description>
+            <developerName>Agent_Get_Order_by_Order_Number_179J600000003qg</developerName>
+            <invocationTarget>Agent_Get_Order_by_Order_Number</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Agent_Get_Order_by_Order_Number</localDeveloperName>
+            <masterLabel>Agent - Get Order by Order Number</masterLabel>
+            <progressIndicatorMessage>Getting the Order Information</progressIndicatorMessage>
+        </localActions>
+        <localActions>
+            <fullName>Agent_Identify_Customer_By_Email_179J600000003qg</fullName>
+            <description>Identify a customer by their email address and return their contact record.</description>
+            <developerName>Agent_Identify_Customer_By_Email_179J600000003qg</developerName>
+            <invocationTarget>Agent_Identify_Customer_By_Email</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Agent_Identify_Customer_By_Email</localDeveloperName>
+            <masterLabel>Agent - Identify Customer By Email</masterLabel>
+            <progressIndicatorMessage>Identifying Customer</progressIndicatorMessage>
+        </localActions>
+        <localDeveloperName>OrderInquiries</localDeveloperName>
+        <masterLabel>Order Inquiries</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to answer general questions about orders, get order details, and cancel orders.</scope>
+        <source>SvcCopilotTmpl__OrderInquiries</source>
+    </localTopics>
+    <masterLabel>Marhaba AI Agent</masterLabel>
+    <plannerActions>
+        <fullName>AnswerQuestionsWithKnowledge_16jJ6000000fyOX</fullName>
+        <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+        <developerName>AnswerQuestionsWithKnowledge_16jJ6000000fyOX</developerName>
+        <invocationTarget>streamKnowledgeSearch</invocationTarget>
+        <invocationTargetType>standardInvocableAction</invocationTargetType>
+        <isConfirmationRequired>false</isConfirmationRequired>
+        <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+        <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+        <masterLabel>Answer Questions with Knowledge</masterLabel>
+        <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+        <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+    </plannerActions>
+    <plannerSurfaces>
+        <adaptiveResponseAllowed>true</adaptiveResponseAllowed>
+        <callRecordingAllowed>false</callRecordingAllowed>
+        <surface>SurfaceAction__Messaging</surface>
+        <surfaceType>Messaging</surfaceType>
+    </plannerSurfaces>
+    <plannerType>AiCopilot__ReAct</plannerType>
+    <ruleExpressions>
+        <conditions>
+            <leftOperand>isVerified</leftOperand>
+            <leftOperandType>Variable</leftOperandType>
+            <operator>equal</operator>
+            <rightOperandValue>true</rightOperandValue>
+        </conditions>
+        <expression>Verified_User</expression>
+        <expressionLabel>Verified User</expressionLabel>
+        <expressionName>Verified_User</expressionName>
+        <expressionType>sel</expressionType>
+    </ruleExpressions>
+</GenAiPlannerBundle>
