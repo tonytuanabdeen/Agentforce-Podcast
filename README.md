@@ -20,7 +20,8 @@ This repository contains all the source metadata used to set up **Agentforce** a
       * [Episode 03 - Agentforce Real-time Currency Conversion with Custom Apex-based Actions](#️-episode-03-real-time-currency-conversion-with-custom-apex-based-actions) 
       * [Episode 04 & 05 - Agentforce Customize Agent UI with LWC & Lightning Type](#️-episode-04--05-customize-agent-ui-with-lwc--custom-lightning-type)
       * [Episode 06 - Agentforce Updating Shipping Address](#️-episode-06-updating-shipping-address)
-      * [Episode 07 - Agentforce Escalte to a Human Agent](#️-episode-07-escalate-to-a-human-agent)     
+      * [Episode 07 - Agentforce Escalte to a Human Agent](#️-episode-07-escalate-to-a-human-agent)  
+      * [Episode 08 - Agentforce A2A - The Art of Smart Delegation](#️-episode-07-escalate-to-a-human-agent)     
 
 
 ## Environment
@@ -324,3 +325,32 @@ If you need to [update the Salesforce CLI](https://developer.salesforce.com/docs
 
 > [!TIP]
 > Activate "Marhaba - AI Agent" & also publish the "Marhaba Service" custom site.
+
+
+### ⚙️ Episode 08: A2A - The Art of Smart Delegation
+<hr/>
+
+1. Deploy the **af-A2A-agent2** metadata.
+
+    ```bash
+    sf project deploy start -d af-A2A-agent2
+    ```
+
+> [!NOTE]
+> This package will deploy all necessary components — including the Complaint Case Creation Flow, Permission Set updates for Object CRUD and Field-Level Security, and a new Specialized Agentforce Agent named “Marhaba Complaint Management Agent.”
+
+
+2. Deploy the **af-A2A-agent1** metadata.
+
+    ```bash
+    sf project deploy start -d af-A2A-agent1
+    ```
+
+> [!NOTE]
+> This package will deploy the A2A Routing Flow, & the updated “Marhaba AI Agent” with the custom "Complaint Case Creation" Topic.
+
+
+3. Assign an Agentforce Data Library
+
+> [!NOTE]
+> Click “Marhaba AI Agent” -> Open in Builder, then navigate to the "Data" tab to assign an Agentforce Data Library to the agent — but only if one hasn’t already been assigned.
